@@ -83,9 +83,9 @@
   },
   "devDependencies": {
     "@types/applicationinsights-js": "^1.0.5",
-    "@types/jest": "^22.0.0",
+    "@types/jest": "^23.1.4",
     "@types/node": "^10.0.3",
-    "applicationinsights-js": "^1.0.18",
+    "applicationinsights-js": "^1.0.11",
     "colors": "^1.1.2",
     "commitizen": "^2.9.6",
     "coveralls": "^3.0.0",
@@ -94,7 +94,7 @@
     "gh-pages": "^1.2.0",
     "greenkeeper-lockfile": "^1.15.1",
     "husky": "^0.14.0",
-    "jest": "^22.0.2",
+    "jest": "^23.3.0",
     "lint-staged": "^7.0.0",
     "lodash.camelcase": "^4.3.0",
     "prettier": "^1.4.4",
@@ -102,23 +102,24 @@
     "redux": "^4.0.0",
     "replace-in-file": "^3.0.0-beta.2",
     "rimraf": "^2.6.1",
-    "rollup": "^0.58.0",
+    "rollup": "^0.62.0",
     "rollup-plugin-commonjs": "^9.0.0",
     "rollup-plugin-json": "^3.0.0",
     "rollup-plugin-node-resolve": "^3.0.0",
     "rollup-plugin-sourcemaps": "^0.4.2",
-    "rollup-plugin-typescript2": "^0.11.1",
+    "rollup-plugin-typescript2": "^0.15.1",
     "semantic-release": "^15.6.0",
-    "ts-jest": "^22.0.0",
-    "ts-node": "^6.0.0",
+    "ts-jest": "^23.0.0",
+    "ts-node": "^7.0.0",
     "tslint": "^5.8.0",
     "tslint-config-prettier": "^1.1.0",
     "tslint-config-standard": "^7.0.0",
     "typedoc": "^0.11.0",
-    "typescript": "<2.8.4",
+    "typescript": "2.9.2",
     "validate-commit-msg": "^2.12.2"
   },
   "peerDependencies": {
     "redux": "^4.0.0"
-  }
+  },
+  "dependencies": {}
 }
