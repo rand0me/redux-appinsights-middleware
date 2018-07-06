@@ -11,8 +11,10 @@ notifications:
   email: false
 node_js:
   - node
+before_script: npm run lockfile-update
 script:
   - npm run test:prod && npm run build
+after_script: npm run lockfile-upload
 after_success:
   - npm run report-coverage
   - npm run deploy-docs
