@@ -8,7 +8,7 @@ import {
 } from '../src/redux-appinsights'
 
 const middlewareAPIMock = {
-  dispatch(fn) {
+  dispatch(fn: any) {
     return fn()
   },
   getState() {
@@ -44,7 +44,7 @@ describe('AppInsights Test', () => {
 
   it('reducer skips common action', () => {
     const reducer = createAppInsightsReducer('ai')
-    const state = reducer({ events: [], key: null }, { type: 'ACTION', payload: null })
+    const state = reducer({ events: [] }, { type: 'ACTION', payload: null })
 
     expect(state.events.length).toBe(0)
   })
