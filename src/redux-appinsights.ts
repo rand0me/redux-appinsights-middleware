@@ -38,7 +38,7 @@ export function createAppInsightsMiddleware(
  * @param propName Property name to read from your Actions
  */
 export function createAppInsightsReducer(propName = 'appinsights') {
-  return (state = { events: [] as InsightsEvent[], key: null }, action: AnyAction) => {
+  return (state = { events: [] as InsightsEvent[] }, action: AnyAction) => {
     if (action[propName]) {
       return { events: state.events.concat(action[propName]) }
     } else {
