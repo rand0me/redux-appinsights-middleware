@@ -38,7 +38,7 @@ describe('AppInsights Test', () => {
     const reducer = createAppInsightsReducer()
     expect(reducer).toBeTruthy()
 
-    const state = reducer(undefined, { type: '', appinsights: event })
+    const state = reducer(undefined, { type: '', meta: { appinsights: event } })
     expect(state.events).toContain(event)
   })
 
@@ -57,17 +57,19 @@ describe('AppInsights Test', () => {
     const testAction = {
       type: 'app/SOME_ACTION',
       payload: {},
-      appinsights: {
-        method: 'trackPageView',
-        data: ['Name', 'http://url.com/']
+      meta: {
+        appinsights: {
+          method: 'trackPageView',
+          data: ['Name', 'http://url.com/']
+        }
       }
     }
-    store.dispatch(setup('AI_KEY'))
+    store.dispatch(setup({ instrumentationKey: 'AI_KEY' }))
     expect(AppInsights.downloadAndSetup).toBeCalledWith({ instrumentationKey: 'AI_KEY' })
     store.dispatch(testAction)
     expect(AppInsights.trackPageView).toBeCalledWith('Name', 'http://url.com/')
 
     const state = store.getState()
-    expect(state.events).toContain(testAction.appinsights)
+    expect(state.events).toContain(testAction.meta.appinsights)
   })
 })
