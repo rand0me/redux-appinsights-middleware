@@ -36,9 +36,11 @@ export const store = createStore<IState>(
 store.dispatch({
     type: "app/MY_ACTION",
     payload: { ... },
-    appinsights: {
-        method: "trackPageView",
-        data: [ "Page Title", "http://page.url" ],
+    meta: {
+        appinsights: {
+            method: "trackPageView",
+            data: [ "Page Title", "http://page.url" ],
+        }
     }
 });
 
