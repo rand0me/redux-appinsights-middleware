@@ -81,8 +81,8 @@
   },
   "devDependencies": {
     "@types/applicationinsights-js": "^1.0.5",
-    "@types/jest": "^23.1.4",
-    "@types/node": "^10.11.2",
+    "@types/jest": "^24.0.9",
+    "@types/node": "^11.9.5",
     "applicationinsights-js": "^1.0.11",
     "colors": "^1.1.2",
     "commitizen": "^3.0.0",
@@ -113,7 +113,7 @@
     "tslint-config-prettier": "^1.1.0",
     "tslint-config-standard": "^8.0.0",
     "typedoc": "^0.14.0",
-    "typescript": "2.9.2",
+    "typescript": "^3.3.3333",
     "validate-commit-msg": "^2.12.2"
   },
   "peerDependencies": {
