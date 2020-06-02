@@ -82,7 +82,7 @@
   "devDependencies": {
     "@types/applicationinsights-js": "^1.0.5",
     "@types/jest": "^24.0.9",
-    "@types/node": "^12.0.0",
+    "@types/node": "^14.0.9",
     "applicationinsights-js": "^1.0.11",
     "colors": "^1.1.2",
     "commitizen": "^3.0.0",
